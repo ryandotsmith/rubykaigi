@@ -10,7 +10,7 @@ DEQ_FUNC = File.read(ARGV[0])
 NUM_JOBS=ARGV[1].to_i
 NUM_PROCS=ARGV[2].to_i
 
-u = ENV['DATABSE_URL'] || raise("Set DATABSE_URL")
+u = ENV['DATABASE_URL'] || raise("Set DATABASE_URL")
 D = URI(u)
 
 

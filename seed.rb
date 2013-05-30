@@ -1,7 +1,7 @@
 require 'uri'
 require 'pg'
 
-u = ENV['DATABSE_URL'] || raise("Set DATABSE_URL")
+u = ENV['DATABASE_URL'] || raise("Set DATABASE_URL")
 D = URI(u)
 
 NUM_JOBS = ARGV[0].to_i
